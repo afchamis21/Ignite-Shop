@@ -46,15 +46,42 @@ export const Product = styled('div', {
     opacity: 0,
     transition: 'all 0.2s ease-in-out',
 
-    strong: {
-      fontSize: '$lg',
-      color: '$gray100',
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '0.25rem',
+
+      strong: {
+        fontSize: '$lg',
+        color: '$gray100',
+      },
+
+      span: {
+        fontSize: '$xl',
+        fontWeight: 'bold',
+        color: '$green300',
+      },
     },
 
-    span: {
-      fontSize: '$2xl',
-      fontWeight: 'bold',
-      color: '$green300',
+    button: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: '$white',
+
+      borderRadius: 6,
+      border: 'none',
+      background: '$green500',
+
+      width: 56,
+      height: 56,
+
+      cursor: 'pointer',
+
+      '&:hover': {
+        background: '$green300',
+        transition: 'background-color 0.2s',
+      },
     },
   },
 

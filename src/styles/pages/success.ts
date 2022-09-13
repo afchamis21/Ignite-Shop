@@ -56,3 +56,8 @@ export const ImageContainer = styled('div', {
     objectFit: 'cover',
   },
 })
+
+export const ProductListContainer = styled('div', {
+  display: 'flex',
+  gap: '1rem',
+})
